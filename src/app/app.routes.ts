@@ -7,4 +7,14 @@ export const routes: Routes = [
         loadChildren: ()=> import('./auth/features/auth.routes'),
         //
     },
+
+    {
+        path: 'home',
+        loadChildren: ()=> import('./reds/reds.routes'),
+    },
+
+    {
+        path: '**',
+        redirectTo: '/home',
+    },
 ];
