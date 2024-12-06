@@ -1,0 +1,39 @@
+.perfil-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .perfil-container h2 {
+    text-align: center;
+  }
+  
+  .perfil-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .perfil-container input[type="text"],
+  .perfil-container input[type="checkbox"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .perfil-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .perfil-container button:hover {
+    background-color: #0056b3;
+  }
+  

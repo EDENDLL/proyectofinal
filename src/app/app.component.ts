@@ -11,5 +11,5 @@ import { AuthStateService } from './shared/data-access/auth-state.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Reds UNAJMA';
+  title = 'proyectofinal';
   }

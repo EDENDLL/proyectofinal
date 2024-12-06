@@ -56,7 +56,7 @@ export default class SignUpComponent {
       await this._authService.signUp({ email, password });
 
       toast.success('Usuario creado correctamente');
-      this._router.navigateByUrl('/home');
+      this._router.navigateByUrl('/reds');
     } catch (error) {
       toast.error('Ocurrio un error');
     }
@@ -66,7 +66,7 @@ export default class SignUpComponent {
     try {
       await this._authService.signInWithGoogle();
       toast.success('Bienvenido denuevo');
-      this._router.navigateByUrl('/home');
+      this._router.navigateByUrl('/reds');
     } catch (error) {
       toast.error('Ocurrio un error');
     }

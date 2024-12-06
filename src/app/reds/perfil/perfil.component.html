@@ -1,1 +1,23 @@
-<p>perfil works!</p>
+<h1>Hola</h1>
+<section class="mx-auto w-full max-w-screen-sm px-4">
+<div class="perfil-container">
+    <h2>Editar Perfil</h2>
+    <form >
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" [(ngModel)]="profile.name" name="name" required />
+  
+      <label for="career">Carrera:</label>
+      <input type="text" id="career" [(ngModel)]="profile.career" name="career" />
+  
+      <label for="year">Año Académico:</label>
+      <input type="text" id="year" [(ngModel)]="profile.year" name="year" />
+  
+      <label>
+        <input type="checkbox" [(ngModel)]="profile.publicProfile" name="publicProfile" />
+        Perfil Público
+      </label>
+  
+      <button type="submit">Guardar Cambios</button>
+    </form>
+  </div>
+</section>

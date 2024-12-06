@@ -5,10 +5,10 @@
       </div>
       <nav>
         <ul>
-          <li><a routerLink="/home">Inicio</a></li>
-          <li><a routerLink="/perfil">Perfil</a></li>
-          <li><a routerLink="/grupos">Grupos</a></li>
-          <li><a routerLink="/sign-in">Cerrar Sesión</a></li>
+          <li><a routerLink="/reds">Inicio</a></li>
+          <li><a routerLink="/reds/perfil">Perfil</a></li>
+          <li><a routerLink="/reds/grupos">Grupos</a></li>
+          <li><a href="javascript:void(0)" (click)="logOut()">Cerrar Sesión</a></li>
         </ul>
       </nav>
     </header>
@@ -18,15 +18,15 @@
       <p>Comparte ideas, crea conexiones y únete a grupos académicos.</p>
   
       <div class="features">
-        <div class="feature">
+        <div class="feature" routerLink="/reds/publicaciones">
           <h3>Publicaciones</h3>
           <p>Comparte tus ideas y comentarios con otros estudiantes.</p>
         </div>
-        <div class="feature">
+        <div class="feature" routerLink="/reds/grupos">
           <h3>Grupos</h3>
           <p>Únete a grupos académicos para colaborar y aprender juntos.</p>
         </div>
-        <div class="feature">
+        <div class="feature" routerLink="/reds/eventos">
           <h3>Eventos</h3>
           <p>Descubre y participa en eventos académicos y conferencias.</p>
         </div>
