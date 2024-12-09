@@ -1,0 +1,9 @@
+.lista-publicaciones {
+    margin: 1rem;
+  }
+  
+  .publicacion {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 0;
+  }
+  

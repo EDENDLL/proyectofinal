@@ -12,8 +12,13 @@ export default [
     },
 
     {
-        path: 'publicaciones',
-        loadComponent: () => import('./publicaciones/publicaciones.component'),
+        path: 'lista-publicaciones',
+        loadComponent: () => import('./publicaciones/lista-publicaciones/lista-publicaciones.component'),
+    },
+
+   {
+        path: 'crear-publicaciones',
+        loadComponent: () => import('./publicaciones/crear-publicaciones/crear-publicaciones.component'),
     },
 
     {
