@@ -1,0 +1,19 @@
+<div class="profile-container" *ngIf="profileData; else noProfile">
+    <h2>Perfil del Usuario</h2>
+    <p><strong>Nombre:</strong> {{ profileData.name }}</p>
+    <p><strong>Carrera:</strong> {{ profileData.career }}</p>
+    <p><strong>Año Académico:</strong> {{ profileData.year }}</p>
+    <p><strong>Perfil Público:</strong> {{ profileData.publicProfile ? 'Sí' : 'No' }}</p>
+  </div>
+  
+  <ng-template #noProfile>
+    <div class="no-profile">
+      <p>No hay información de perfil disponible.</p>
+    </div>
+  </ng-template>
+
+  <p>Ve a inicio
+  </p>
+
+  <button routerLink="/reds/perfil">Editar perfil</button>
+  

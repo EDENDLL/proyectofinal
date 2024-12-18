@@ -1,20 +1,38 @@
 <div class="perfil-container">
   <h2>Editar Perfil</h2>
-  <form >
+  <form [formGroup]="profileForm" (ngSubmit)="saveProfile()">
     <label for="name">Nombre:</label>
-    <input type="text" id="name"  name="name" required />
+    <input
+      type="text"
+      id="name"
+      formControlName="name"
+      required
+    />
 
     <label for="career">Carrera:</label>
-    <input type="text" id="career"  name="career" />
+    <input
+      type="text"
+      id="career"
+      formControlName="career"
+    />
 
     <label for="year">Año Académico:</label>
-    <input type="text" id="year"  name="year" />
+    <input
+      type="text"
+      id="year"
+      formControlName="year"
+    />
 
     <label>
-      <input type="checkbox"  name="publicProfile" />
+      <input
+        type="checkbox"
+        formControlName="publicProfile"
+      />
       Perfil Público
     </label>
 
-    <button type="submit">Guardar Cambios</button>
+    <button routerLink="/reds/mostrar-perfil" type="submit" [disabled]="profileForm.invalid">
+      Guardar Cambios
+    </button>
   </form>
 </div>

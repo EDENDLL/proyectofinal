@@ -1,0 +1,71 @@
+/* Estilos para el contenedor principal */
+.profile-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Encabezado */
+  .profile-container h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Información del perfil */
+  .profile-container p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Enfatizar información clave */
+  .profile-container strong {
+    color: #222;
+  }
+
+/* Botón de editar perfil */
+button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #007bff; /* Verde moderno */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1a0fb6; /* Verde más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de elevación sutil */
+}
+
+button:active {
+  background-color: #1e7e34;
+  transform: translateY(0); /* Vuelve a posición original */
+}
+
+button:focus {
+  outline: none; /* Elimina borde de enfoque predeterminado */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.7); /* Resalta con sombra */
+}
+
+  
+  /* Mensaje si no hay perfil */
+  .no-profile {
+    color: #777;
+    font-style: italic;
+    text-align: center;
+  }
+  

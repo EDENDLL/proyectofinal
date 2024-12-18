@@ -12,6 +12,11 @@ export default [
     },
 
     {
+        path: 'mostrar-perfil',
+        loadComponent: () => import('./perfil/mostrar-perfil/mostrar-perfil.component'),
+    },
+
+    {
         path: 'lista-publicaciones',
         loadComponent: () => import('./publicaciones/lista-publicaciones/lista-publicaciones.component'),
     },

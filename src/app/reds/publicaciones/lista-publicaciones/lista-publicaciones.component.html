@@ -1,11 +1,15 @@
 <div>
+  
   <app-crear-publicaciones></app-crear-publicaciones>
+  <br><br>
+  <hr>
   <h2>Publicaciones</h2>
   <a routerLink="/reds/crear-publicaciones">Crear una publicacion</a>
   
   <ul>
     <li *ngFor="let publicacion of publicaciones">
       <h3>{{ publicacion.titulo }}</h3>
+      <h5>{{ publicacion.autorId }}</h5>
       <p>{{ publicacion.contenido }}</p>
       <small>{{ publicacion.fechaCreacion | date }}</small>
     </li>
